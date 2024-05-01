@@ -1,6 +1,6 @@
 package br.unipe.boaspraticas.exercicios.solid.lsp.formas;
 
-class Square extends Shape {
+class Square implements GeometricForms {
     private int side;
 
     public void setSide(int side) {
@@ -8,11 +8,11 @@ class Square extends Shape {
     }
 
     @Override
-    public void draw() {
-        // Desenhar um quadrado
-    }
-
     public int getArea() {
         return side * side;
+    }
+
+    public void draw() {
+        // Desenhar um quadrado
     }
 }

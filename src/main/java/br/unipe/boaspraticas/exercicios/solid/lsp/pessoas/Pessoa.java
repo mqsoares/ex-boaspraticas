@@ -1,6 +1,6 @@
 package br.unipe.boaspraticas.exercicios.solid.lsp.pessoas;
 
-class Pessoa {
+class Pessoa implements Greeting {
     private String nome;
 
     public Pessoa(String nome) {
@@ -11,7 +11,8 @@ class Pessoa {
         return nome;
     }
 
-    public void fazerSom() {
+    @Override
+    public void greeting() {
         System.out.println("Oi!");
     }
 }

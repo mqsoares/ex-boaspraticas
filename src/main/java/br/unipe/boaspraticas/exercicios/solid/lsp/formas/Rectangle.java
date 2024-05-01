@@ -1,6 +1,6 @@
 package br.unipe.boaspraticas.exercicios.solid.lsp.formas;
 
-class Rectangle extends Shape {
+class Rectangle implements GeometricForms {
     private int width;
     private int height;
 
@@ -13,11 +13,11 @@ class Rectangle extends Shape {
     }
 
     @Override
-    public void draw() {
-        // Desenhar um retângulo
-    }
-
     public int getArea() {
         return width * height;
+    }
+
+    public void draw() {
+        // Desenhar um retângulo
     }
 }
